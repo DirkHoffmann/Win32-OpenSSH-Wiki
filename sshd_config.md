@@ -36,7 +36,7 @@ ______
 #### [ChrootDirectory](https://man.openbsd.org/sshd_config#ChrootDirectory)
 Support added in v7.7.0.0
 
-To setup a sftp-only chroot server, set ForceCommand to `internal-sftp`. You may also set up scp with chroot, by implementing a custom shell that would only allow scp and sftp. 
+This directive is only supported with sftp sessions. A remote session into cmd.exe wouldn't honor this. To setup a sftp-only chroot server, set ForceCommand to `internal-sftp`. You may also set up scp with chroot, by implementing a custom shell that would only allow scp and sftp. 
 _____
 #### [HostKey](https://man.openbsd.org/sshd_config#HostKey)
 The defaults are _%programdata%/ssh/ssh_host_ecdsa_key_, _%programdata%/ssh/ssh_host_ed25519_key_ and _%programdata%/ssh/ssh_host_rsa_key_. If the defaults are not present, sshd will automatically generate these on a service start.
