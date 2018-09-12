@@ -6,7 +6,7 @@ Troubleshooting steps for typical service startup and connection issues:
 
 * Server side: run `sshd` in debug mode
   * `Stop-Service sshd` (if sshd service is running)
-  * `sshd.exe -d` This will run sshd in interactive mode under currently logon user (typically as admin)
+  * `sshd.exe -d` This will run sshd in interactive mode under currently logged on user (typically as admin). Note that, in this mode, you can only login as the "currently logged on user" and only using "key based auth". To overcome these restrictions, you should instead run `psexec -s sshd.exe -d` to run sshd as SYSTEM.
   * This will dump debug logs in real time to stdout on the console
   * You can also add additional `d`s for more detailed loggin:
     * `sshd.exe -dd` or `sshd.exe -ddd`
