@@ -1,6 +1,7 @@
-Before configuring `DefaultShell`, ensure that the following prerequisites are met
+Before configuring `DefaultShell`, ensure the following prerequisites are met
  - OpenSSH installation path is in system PATH. 
    - If not already present, amend system PATH and restart sshd service.
+
 
 Follow these steps:
 - On the server side, configure the default ssh shell in the windows registry. 
