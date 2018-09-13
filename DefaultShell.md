@@ -9,7 +9,7 @@ Follow these steps:
 
 ***
 
-> Example - Powershell cmdlets to set powershell bash as default shell
+> Powershell cmdlets to set powershell bash as default shell
   
    * `New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -PropertyType String -Force`
 
