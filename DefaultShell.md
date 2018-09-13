@@ -1,10 +1,11 @@
-If you configure a default shell, ensure that OpenSSH installation path is in system PATH. If not already present, amend system PATH and restart sshd service.
+To configure a default shell, ensure that the following prerequisites are met
+ - OpenSSH installation path is in system PATH. 
+   - If not already present, amend system PATH and restart sshd service.
 
-On the server side, configure the default ssh shell in the windows registry. 
-
-`Computer\HKEY_LOCAL_MACHINE\SOFTWARE\OpenSSH\DefaultShell` - Full path (case sensitive) of the shell executable
-
-`Computer\HKEY_LOCAL_MACHINE\SOFTWARE\OpenSSH\DefaultShellCommandOption` - The switch that the configured default shell requires to execute a command and immediately exit and return to the calling process. It is used for executing the remote ssh commands. _Example- ssh user@ip hostname_
+Follow these steps:
+- On the server side, configure the default ssh shell in the windows registry. 
+  - `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\OpenSSH\DefaultShell` - Full path (case sensitive) of the shell executable
+  - `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\OpenSSH\DefaultShellCommandOption` - The switch that the configured default shell requires to execute a command and immediately exit and return to the calling process. It is used for executing the remote ssh commands. _Example- ssh user@ip hostname_
 
 
 ***
