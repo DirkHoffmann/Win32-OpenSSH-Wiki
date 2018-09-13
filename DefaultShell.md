@@ -1,4 +1,4 @@
-To configure a default shell, ensure that the following prerequisites are met
+Before configuring `DefaultShell`, ensure that the following prerequisites are met
  - OpenSSH installation path is in system PATH. 
    - If not already present, amend system PATH and restart sshd service.
 
