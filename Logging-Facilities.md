@@ -13,11 +13,12 @@ To see Debug logs in EventViewer, do the following:
 - In Eventviewer, select option to show "Analytic and Debug Logs" (under top menu, View)
 - Enable Debug logging (select Debug channel, click "Enable log" on right menu) 
 
-#### File based logging
+#### File based logging 
 File based logging option (useful for quickly collecting debug traces) can be turned on by setting the following in sshd_config
 
  `SyslogFacility LOCAL0 `
 
+Restart the sshd service after making changes to sshd_config.
 With this option, the logs would be collected at %programdata%\ssh\logs.
 sftp-server would follow similar semantics for logging (by default to ETW) and to files using the following as subsystem path in sshd_config:
 
