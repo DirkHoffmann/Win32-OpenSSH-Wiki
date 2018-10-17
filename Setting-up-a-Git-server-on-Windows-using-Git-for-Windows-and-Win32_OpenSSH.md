@@ -26,7 +26,7 @@
      `ssh-add.exe c:\test\myprivatekey`
 1. To check out a repository, go to where you want to put your local repo,
 
-**Note that `git clone user@domain@servermachine:C:/test/myrepo.git` does not work due to [known issue](https://github.com/PowerShell/Win32-OpenSSH/issues/895). Work around it to set powershell as defaultShell in registry.
+**Note that `git clone user@domain@servermachine:C:/test/myrepo.git` does not work due to [known issue](https://github.com/PowerShell/Win32-OpenSSH/issues/895). Work around it to set powershell as [default Shell](https://github.com/PowerShell/Win32-OpenSSH/wiki/DefaultShell) in registry.
 Or
 by following steps when cmd is default shell:
 
