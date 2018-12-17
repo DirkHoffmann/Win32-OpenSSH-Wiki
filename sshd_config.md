@@ -34,6 +34,10 @@ Available authentication methods are "password" and "publickey".
 ______
 #### [AuthorizedKeysFile](https://man.openbsd.org/sshd_config#AuthorizedKeysFile)
 The default is “.ssh/authorized_keys .ssh/authorized_keys2”. If the path is not absolute, it is taken relative to user's home directory (or profile image path). Ex. c:\users\user.
+
+From v7.7.2.2 on wards, following is the default location of AuthorizedKeysFile for all users in Administrators group
+
+_%programdata%/ssh/administrators_authorized_keys_
 ______
 #### [ChrootDirectory](https://man.openbsd.org/sshd_config#ChrootDirectory)
 Support added in v7.7.0.0
