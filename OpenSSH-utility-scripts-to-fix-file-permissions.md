@@ -1,4 +1,4 @@
-Powershell utility scripts included in [v0.0.15.0](https://github.com/PowerShell/Win32-OpenSSH/releases/tag/v0.0.15.0) onwards, aid in fixing permissions on various OpenSSH key and configuration files. See [here](https://github.com/PowerShell/Win32-OpenSSH/wiki/Security-protection-of-various-files-in-Win32-OpenSSH) for more details on how file permissions are enforced on Windows. 
+Powershell utility scripts included in [v0.0.15.0](https://github.com/PowerShell/Win32-OpenSSH/releases/tag/v0.0.15.0) onwards, aid in fixing permissions on various OpenSSH key and configuration files. 
 
 Improper file permissions will likely result in a broken configuration (OpenSSH fails to work). You may use the following scripts (provided in release payload) to help evaluate and fix any permission related issues.
 
@@ -46,7 +46,7 @@ Repair-SshdHostKeyPermission -FilePath c:\test\sshtest_hostkey_ecdsa
 # fix permissions on a specified authorized_key
 Repair-AuthorizedKeyPermission -FilePath C:\Users\sshtest_ssouser\.ssh\authorized_keys
 # fix permissions a specific ssh_config
-Repair-UserKeyPermission -FilePath '~\.ssh\config'
+Repair-UserSshConfigPermission  -FilePath '~\.ssh\config'
 # fix permissions on an user key
-Repair-UserSshConfigPermission -FilePath c:\test\sshtest_userssokey_ed25519
+Repair-UserKeyPermission -FilePath c:\test\sshtest_userssokey_ed25519
 ```
