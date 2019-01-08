@@ -25,7 +25,7 @@
 
 ### Setup server-side (`sshd`)
 
-1. Append contents of `id_rsa.pub` (client's public key) to corresponding user's directory on the SSH server in `%systemdrive%\Users\<user>\.ssh\authorized_keys` (create one if needed). 
+1. Append contents of `id_rsa.pub` (client's public key) to the following file in corresponding user's directory `%systemdrive%\Users\<user>\.ssh\authorized_keys` (create one if needed). 
 2. Double check permission on authorized_keys (only System, Administrators and owner can have access).
 
 ### For Unix and Linux users
