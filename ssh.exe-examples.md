@@ -29,6 +29,12 @@
 2. Double check access permissions on authorized_keys (only System, Administrators and owner can have access).
 `icacls %systemdrive%\Users\<user>\.ssh\authorized_keys`
 
+## Login using Kerberos Authentication
+### Setup server-side
+1. On a domain joined server, set GSSAPIAuthentication to `yes` in sshd_config
+### Usage on a domain joined Windows client logged in as domain user
+* `ssh -K host`
+
 ### For Unix and Linux users
 
 The [Modern Unix Rosetta Stone](https://certsimple.com/rosetta-stone) includes PowerShell examples of common Unix and Linux commands. 
