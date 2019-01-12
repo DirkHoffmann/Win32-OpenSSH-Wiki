@@ -5,7 +5,6 @@ Intent of this project is to get to a state that can converge to and integrate i
 - VPN forwarding
 - X11 forwarding
 - PKCS based smart cards
-- GSSAPI based authentication
 - Host based authentication
 - Authentication forwarding
 - Compression
