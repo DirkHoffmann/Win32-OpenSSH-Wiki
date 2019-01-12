@@ -22,7 +22,5 @@ Follow these steps:
 ```
  - If you are configuring the powershell.exe/cmd.exe/WSL-bash.exe as default ssh shell, your registry should look like [this](https://user-images.githubusercontent.com/23668037/32013581-67206dca-b970-11e7-8820-fde658d302c1.png).
 ***
-- If you are configuring the custom shell without argument escaping, your registry should look like [this]().
-***
 
 
