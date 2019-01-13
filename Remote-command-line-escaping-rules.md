@@ -1,4 +1,12 @@
-- Double quotes escaping issue for default shell
-    - for common shells, like powershell, bash, cygwin, double quotes are added to the path of default shell and its arguments, and the double quotes and backslash inside args are escaped.
-    - For cmd and ssh-shellhost.exe, double quotes to shell and its arguments are added without any escaping.
-    - For shell other than above, a registry value DefaultShellEscapeArguments" under "HKEY_LOCAL_MACHINE\SOFTWARE\OpenSSH" is added (see [DefaultShell](https://github.com/PowerShell/Win32-OpenSSH/wiki/DefaultShell)). The default value when missing is 1, which mean the escaping will happen like no.1 above. If non-escaping is preferred, this value needs to be set to 0. in later case, only double quotes are added to shell and args, like no.2 above.
+
+|  DefaultShell | DefaultShellEscapeArguments  |ShellPath is double quoted |" and \ are escaped in arguments|
+|--|--|--|--|
+| powershell  | 1, 0, missing | yes | yes |
+|  bash | 1, 0, missing | Yes | Yes|
+|  cygwin |  1, 0, missing | Yes | Yes |
+|  cmd.exe |  1, 0, missing | Yes  | No |
+|  ssh-shellhost.exe | 1, 0, missing | Yes  | No |
+|  Other custom shells | 1, missing | Yes  | Yes |
+|  Other custom shells | 0 | Yes | No|
+
+Please refer to [DefaultShell](https://github.com/PowerShell/Win32-OpenSSH/wiki/DefaultShell) for setting DefaultShell and DefaultShellEscapeArguments. 
