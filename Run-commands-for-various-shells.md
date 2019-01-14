@@ -1,4 +1,4 @@
-Here are examples to run commands on remote shell over openssh. Examples are to print out "hello" remotely.
+Here are examples to run commands on remote shell over openssh: print out "hello" over various shells on server.
 
 |  DefaultShell | cmd on local shell | cmd to print on remote shell (client cmd run in cmd prompt) |
 |:--|:--|:--|
