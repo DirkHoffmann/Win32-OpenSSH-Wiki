@@ -1,6 +1,6 @@
-Here are examples to run commands on remote shell over openssh: print out "hello" over various shells on server.
+Examples to run commands on remote shells over openssh: print out "hello" over various shells on server.
 
-|  DefaultShell | cmd on local shell | cmd to print on remote shell (client cmd run in cmd prompt) |
+|  DefaultShell | cmd run on local shell | Cmd to run on remote shell (client cmd run in cmd prompt) |
 |:--|:--|:--|
 | powershell | echo `'"hello"'`<br/> or ``echo `"hello`"`` |`c:\>ssh.exe localhost echo '\"hello\"'` <br/> or ``c:\>ssh.exe winbox echo `\"hello`\"``<br> or ``c:\>ssh.exe localhost "echo `""hello`"""`` | 
 |  bash | ``echo \"hello\"``<br/> or ``echo '"hello"'``| ``c:\>ssh winbox 'echo \"hello\"'``<br/> or `c:\>ssh.exe winbox echo \\\"hello\\\"` <br/> or `c:\>ssh winbox  echo '\"hello\"'`  |
