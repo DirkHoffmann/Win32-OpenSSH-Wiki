@@ -1,4 +1,4 @@
-Examples to run commands on remote shells over openssh: print out "hello" over various shells on server.
+Examples to run commands on remote [shells](https://github.com/PowerShell/Win32-OpenSSH/wiki/DefaultShell) over openssh: print out "hello" over various shells on server.
 
 |  DefaultShell | cmd run on local shell | Cmd to run on remote shell (client cmd run in cmd prompt) |
 |:--|:--|:--|
