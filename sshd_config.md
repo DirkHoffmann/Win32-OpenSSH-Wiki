@@ -112,6 +112,8 @@ PidFile
 
 PrintLastLog
 
+PrintMotd
+
 RDomain
 
 StreamLocalBindMask
