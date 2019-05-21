@@ -1,4 +1,10 @@
 Following issues/limitations need to be considered while evaluating Win32 OpenSSH
+- Cygwin users - Win32 OpenSSH service name (sshd) conflict with Cygwin's version of OpenSSH daemon prior to version 8.0, 
+You may host Cygwin's OpenSSH daemon along side Win32's version by registering the later with a different name (say win32sshd), by doing the following in elevated Powershell
+```
+sc.exe delete sshd
+New-Service -Name win32sshd -BinaryPathName 'C:\Program Files\OpenSSH\sshd.exe' -StartupType Manual
+```
 - [Elevation of Privilege over loopback](https://github.com/PowerShell/Win32-OpenSSH/issues/680) on misconfigured machines.
 - ssh-agent only supports '-l' '-L' 'd' and '-D' options. It ignores '-c' and '-t' options of ssh-add. It persistently and permanently stores the user's private key.
 - Text resources (config and key files) need to be either ASCII or UTF-8 (UTF-16 variants are not supported)
