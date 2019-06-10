@@ -1,4 +1,5 @@
 See [Logging Facilities](https://github.com/PowerShell/Win32-OpenSSH/wiki/Logging-Facilities) to modify logging location.
+See if you have the right [file permissions](https://github.com/PowerShell/Win32-OpenSSH/wiki/Security-protection-of-various-files-in-Win32-OpenSSH) set. 
 
 Troubleshooting steps for typical service startup and connection issues:
 
