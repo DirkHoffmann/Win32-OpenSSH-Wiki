@@ -17,7 +17,7 @@
 * [SSH Usage Examples](https://github.com/PowerShell/Win32-OpenSSH/wiki/ssh.exe-examples)
 * [SFTP Usage Examples](https://github.com/PowerShell/Win32-OpenSSH/wiki/sftp.exe-examples)
 * [Using Certificate Authentication](https://github.com/PowerShell/Win32-OpenSSH/wiki/Certificate-Authentication)
-* [Fix SSH file permissions](https://github.com/PowerShell/Win32-OpenSSH/wiki/OpenSSH-utility-scripts-to-fix-file-permissions)
+* [Fix SSH file permissions](https://github.com/PowerShell/Win32-OpenSSH/wiki/Security-protection-of-various-files-in-Win32-OpenSSH)
 * [Info on SSH remote sessions on Windows](https://github.com/PowerShell/Win32-OpenSSH/wiki/SSH-remote-sessions-on-Windows)
 * [TTY PTY support](https://github.com/PowerShell/Win32-OpenSSH/wiki/TTY-PTY-support-in-Windows-OpenSSH)
 * [Troubleshooting](https://github.com/PowerShell/Win32-OpenSSH/wiki/Troubleshooting-Steps)
