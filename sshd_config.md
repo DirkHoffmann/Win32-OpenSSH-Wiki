@@ -44,6 +44,10 @@ Support added in v7.7.0.0
 
 This directive is only supported with sftp sessions. A remote session into cmd.exe wouldn't honor this. To setup a sftp-only chroot server, set ForceCommand to `internal-sftp`. You may also set up scp with chroot, by implementing a custom shell that would only allow scp and sftp. 
 _____
+#### [ForceCommand](https://man.openbsd.org/sshd_config#ForceCommand)
+Enforced only on non-PTY sessions. To block PTY access, use [PermitTTY="no"](https://man.openbsd.org/sshd_config#PermitTTY) directive.
+For certificate based ForceCommand, use [no-pty](https://man.openbsd.org/ssh-keygen#no-pty) option. 
+_____
 #### [GSSAPIAuthentication](https://man.openbsd.org/sshd_config#GSSAPIAuthentication)
 Support for Kerberos authentication via GSSAPI is added in v7.9.0.0.
 _____
