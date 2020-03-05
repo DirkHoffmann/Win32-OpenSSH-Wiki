@@ -6,7 +6,7 @@ Follow these steps:
 - On the server side, configure the default ssh shell in the windows registry. 
   - `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\OpenSSH\DefaultShell` - full path of the shell executable
   - `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\OpenSSH\DefaultShellCommandOption` (optional) - switch that the configured default shell requires to execute a command, immediately exit and return to the calling process. By default this is `-c`. 
-  - `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\OpenSSH\DefaultShellEscapeArguments` (optional) - flag that allow you to skip escaping the arguments of default shell. By default this is `0`. This option is only applicable to shells other than powershell, powershell, bash, cygwin, cmd, and ssh-shellhost.exe.
+  - `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\OpenSSH\DefaultShellEscapeArguments` (optional) - flag that allow you to skip escaping the arguments of default shell. By default this is `0`. This option is only applicable to shells other than powershell, bash, cygwin, cmd, and ssh-shellhost.exe.
 ***
 > Examples:
  - Powershell cmdlets to set powershell bash as default shell
