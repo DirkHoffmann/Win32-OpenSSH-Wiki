@@ -33,7 +33,7 @@
 ### Setup server-side
 1. On a domain joined server, set GSSAPIAuthentication to `yes` in sshd_config
 ### Usage on a domain joined Windows client logged in as domain user
-* `ssh -K host`
+* `ssh -K **host**`
 
 ### For Unix and Linux users
 
