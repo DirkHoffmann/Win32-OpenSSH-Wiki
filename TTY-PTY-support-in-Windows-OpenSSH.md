@@ -92,7 +92,7 @@ If you are using the openssh client,
 
      If you want to use the inbuilt [VT100](https://en.wikipedia.org/wiki/VT100) ANSI parser (that's part of the openssh client) then set the environment variable "SSH_TERM_CONHOST_PARSER" to 0.
 
-  b) Prior versions of windows 10 OS, the raw VT sequences will be parsed by the inbuilt [VT100](https://en.wikipedia.org/wiki/VT100) ANSI parser that's part of the ssh.exe. We have fixed most of the issues. We have no plans to extend to VT100+ sequences.   
+  b) Prior versions of windows 10 OS, the raw VT sequences will be parsed by the inbuilt [VT100](https://en.wikipedia.org/wiki/VT100) ANSI parser that's part of the ssh.exe. We have fixed most of the issues. We have no plans to extend to VT100+ sequences. After 9999 you will have to refresh the screen, otherwise the data will only be rendered on the last line.  
 
      If you want support for the VT100+ sequences then please upgrade to windows 10+ OS or use the third party tools like putty, Cygwin, etc.
 
