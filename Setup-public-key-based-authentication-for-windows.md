@@ -22,7 +22,7 @@
       
       _Please note administrators_authorized_keys is the file name without any extension._
 
-     ii. set the right ACLs.
+     ii. set the right ACLs using one of the host private key file.
  
      `get-acl "$env:programdata\ssh\ssh_host_rsa_key" | set-acl "$env:programdata\ssh\administrators_authorized_keys"`
 
