@@ -79,7 +79,7 @@ a) while executing an unknown command (abcdef) in the powershell, the last line 
 
 # Implementation details
 ## PTY
-Windows OS does not have inbuilt support for a [pseudoterminal](https://en.wikipedia.org/wiki/Pseudoterminal). 
+Windows versions before Windows 10 1809 did not have built-in support for a [pseudoterminal](https://en.wikipedia.org/wiki/Pseudoterminal). 
 
 Windows version of OpenSSH server implements a [VT100](https://en.wikipedia.org/wiki/VT100) PTY by intercepting [Windows Console](https://msdn.microsoft.com/en-us/library/windows/desktop/ms682055(v=vs.85).aspx) events. This is implemented in ssh-shellhost.exe, connected to sshd via [std i/o](https://en.wikipedia.org/wiki/Standard_streams). At a high level, ssh-shellhost.exe acts as an intermediary between sshd and a Windows console applications performing the following: 
   - interprets incoming VT100, processes and calls Windows Console IO
