@@ -1,4 +1,4 @@
-On Windows 10+ and Windows server 2019+, OpenSSH uses the features provided by console. OpenSSH ssh client uses console ability to parse the incoming VTSequence from ssh server. On the server side, OpenSSH sshd server component uses [conpty support](https://devblogs.microsoft.com/commandline/windows-command-line-introducing-the-windows-pseudo-console-conpty/) provided by the Microsoft console team. If you are using downlevel OS then please be aware of some restrictions listed below.
+On Windows 10+ and Windows server 2019+, OpenSSH uses the features provided by console. OpenSSH ssh client uses console ability to parse the incoming VTSequence from ssh server. On the server side, OpenSSH sshd server component uses [conpty support](https://devblogs.microsoft.com/commandline/windows-command-line-introducing-the-windows-pseudo-console-conpty/) provided by the Microsoft console team. If you are using downlevel OS (_Windows 10 / Windows server 2019 below OS version_) then please be aware of some restrictions listed below.
 
 
 # SETUP
