@@ -18,8 +18,17 @@ File based logging option (useful for quickly collecting debug traces) can be tu
 
  `SyslogFacility LOCAL0 `
 
+ `LogLevel Debug3 `
+
 Restart the sshd service after making changes to sshd_config.
+
+ `net stop sshd`
+
+ `net start sshd`
+
 With this option, the logs would be collected at %programdata%\ssh\logs.
+
+
 sftp-server would follow similar semantics for logging (by default to ETW) and to files using the following as subsystem path in sshd_config:
 
 `sftp-server -f LOCAL0 -l DEBUG3`
