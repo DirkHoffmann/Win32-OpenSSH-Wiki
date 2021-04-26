@@ -1,3 +1,4 @@
+
 ##  On the client machine, create the public/private key pair.
 1) cd to <openssh_binary_folder>
 
@@ -40,3 +41,5 @@
     ssh user@ip -i <private_key_absolute_path> (local users)
 
 _Please note, if you have private_key in "$env:USERPROFILE\\.ssh" directory then you don't need to pass the private_key_absolute_path_
+
+**_If you are using your own keys (instead of generating new ssh keys) then please make sure the file encoding is set to UTF-8**
