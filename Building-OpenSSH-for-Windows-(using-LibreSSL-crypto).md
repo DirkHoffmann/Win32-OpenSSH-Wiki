@@ -2,12 +2,6 @@
   - git clone https://github.com/PowerShell/openssh-portable
   - git checkout latestw_all
 
-#### Building OpenSSH for Windows Using Build Script
-In Powershell:
-  - cd repository-root
-  - ipmo .\contrib\win32\openssh\OpenSSHBuildHelper.psm1 -Force
-  - Start-OpenSSHBuild -Configuration <Release|Debug> -NativeHostArch <x64|x86>
-
 #### Building OpenSSH for Windows Using Visual Studio, 2015 or newer [*Recommended*]
   - Download and Install VS 2015, or newer, with Desktop Development with C++ - [latest install here](https://visualstudio.microsoft.com/downloads/)  
   - Install Windows SDK 10.0.17663.0 during Visual Studio install, or download from [here](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/)
@@ -15,6 +9,12 @@ In Powershell:
   - Open "contrib\win32\openssh\Win32-OpenSSH.sln" in Visual Studio, ensure platform toolset is set to "no upgrade" and Windows SDK is set to "10.0.17663.0"
   - If necessary, change the configuration and architecture from the middle toolbar
   - Build the Win32-OpenSSH binaries
+
+#### Building OpenSSH for Windows Using Build Script
+In Powershell:
+  - cd repository-root
+  - ipmo .\contrib\win32\openssh\OpenSSHBuildHelper.psm1 -Force
+  - Start-OpenSSHBuild -Configuration <Release|Debug> -NativeHostArch <x64|x86>
 
 #### Deploying OpenSSH for Windows
   - Start-OpenSSHPackage -Configuration <Release|Debug> -NativeHostArch <x64|x86>
