@@ -14,6 +14,12 @@ The commands to run, are as follows:
 * To install only the SSH Server  
 `msiexec /i <path to openssh.msi> REMOVE=Client`
 
+## Examples:
+* Installing SSH Client & openssh.msi is in the working directory:  
+`msiexec /i openssh.msi REMOVE=Server`
+* Installing SSH Server & openssh.msi is in C:\users\public\downloads\:  
+`msiexec /i C:\users\public\downloads\openssh.msi REMOVE=Client`
+
 To verify that OpenSSH was installed properly, check the status of the SSH Service.  
 In PowerShell, run:   
 `Get-Service -Name ssh*`
