@@ -8,7 +8,7 @@
 * [ssh-add](https://man.openbsd.org/ssh-add)
 
 ## Installation
-
+* [MSI Install Instructions](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI) 
 * [Install Instructions](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH)
 * [Alternative installation using the universal installer](https://github.com/PowerShell/Win32-OpenSSH/wiki/%5BDeprecated%5D-Win32-OpenSSH-Automated-Install-and-Upgrade-using-Chocolatey)
 * [Retrieving download links for the latest packages](https://github.com/PowerShell/Win32-OpenSSH/wiki/How-to-retrieve-links-to-latest-packages)
