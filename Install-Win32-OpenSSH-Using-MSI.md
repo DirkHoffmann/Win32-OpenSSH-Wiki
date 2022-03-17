@@ -4,6 +4,7 @@
 1. Download the [latest](https://github.com/PowerShell/Win32-OpenSSH/releases/latest) build of OpenSSH, selecting either the 32-bit or 64-bit MSI.
 
 # Install Win32-OpenSSH using MSI
+## 1. Run MSI Installer
 The MSI must be run in any command prompt (cmd.exe & pwsh.exe both work), as it does not yet have a UI (coming soon).  
 The MSI will install OpenSSH to the `ProgramFiles\OpenSSH` folder.  
 The commands to run, are as follows:
@@ -14,13 +15,18 @@ The commands to run, are as follows:
 * To install only the SSH Server  
 `msiexec /i <path to openssh.msi> REMOVE=Client`
 
-## Examples:
+###  Examples:
 * Installing SSH Client & openssh.msi is in the working directory:  
 `msiexec /i openssh.msi REMOVE=Server`
 * Installing SSH Server & openssh.msi is in C:\users\public\downloads\:  
 `msiexec /i C:\users\public\downloads\openssh.msi REMOVE=Client`
 
-To verify that OpenSSH was installed properly, check the status of the SSH Service.  
+## 2. Update SYSTEM PATH (Required for SCP and SFTP)
+Append the Win32-OpenSSH install directory to the system path, by running the following command:  
+`setx /M PATH $($Env:PATH + ';' + ${Env:ProgramFiles} + '\OpenSSH')`
+
+## 3. Verify OpenSSH Install
+Check the status of the SSH Service.  
 In PowerShell, run:   
 `Get-Service -Name ssh*`
 
