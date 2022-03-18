@@ -36,3 +36,6 @@ Similarly, the command to uninstall Win32-OpenSSH is as follows:
 
 # Additional Documentation on msiexec
 Further information on msi command-line options can be found [here](https://docs.microsoft.com/en-us/windows/win32/msi/command-line-options)
+
+# Video recording
+https://user-images.githubusercontent.com/23668037/159090480-fb40882f-bf52-4dd7-a6b2-f3536128ab82.mp4
