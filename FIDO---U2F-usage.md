@@ -10,7 +10,7 @@ FIDO/U2F is supported in win32-openssh V8.9.0.0+.
 
        `ssh-keygen.exe -t ecdsa-sk -f .\id-ecdsa-sk -O "resident"`
 
-    * If you want to download the resident keys from the hardware device. Run in an **elevated administrator ** terminal.
+    * If you want to download the resident keys from the hardware device. Run in an **elevated administrator** terminal.
 
        `ssh-keygen.exe -K`
 
