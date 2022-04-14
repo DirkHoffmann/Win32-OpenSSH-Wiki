@@ -32,7 +32,7 @@
 ## Login using Kerberos Authentication
 ### Setup server-side
 1. On a domain joined server, set GSSAPIAuthentication to `yes` in sshd_config
-2. If you modify the sshd_config then restart the sshd service
+2. If sshd_config is modified then restart the sshd service
      * `net stop sshd`
      * `net start sshd`
 
