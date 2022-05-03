@@ -11,15 +11,23 @@ The commands to run, are as follows:
 * To install both the SSH Client & the SSH Server (default behavior)  
 `msiexec /i <path to openssh.msi>`
 * To install only the SSH Client  
-`msiexec /i <path to openssh.msi> REMOVE=Server`
+`msiexec /i <path to openssh.msi> ADDLOCAL=Client`
 * To install only the SSH Server  
+`msiexec /i <path to openssh.msi> ADDLOCAL=Server`
+* To uninstall only the SSH Client  
 `msiexec /i <path to openssh.msi> REMOVE=Client`
+* To uninstall only the SSH Server  
+`msiexec /i <path to openssh.msi> REMOVE=Server`
 
 ###  Examples:
 * Installing SSH Client & openssh.msi is in the working directory:  
-`msiexec /i openssh.msi REMOVE=Server`
+`msiexec /i openssh.msi ADDLOCAL=Client`
 * Installing SSH Server & openssh.msi is in C:\users\public\downloads\:  
-`msiexec /i C:\users\public\downloads\openssh.msi REMOVE=Client`
+`msiexec /i C:\users\public\downloads\openssh.msi ADDLOCAL=Server`
+* Uninstalling SSH Client & openssh.msi is in the working directory:  
+`msiexec /i openssh.msi REMOVE=Client`
+* Uninstalling SSH Server & openssh.msi is in C:\users\public\downloads\:  
+`msiexec /i C:\users\public\downloads\openssh.msi REMOVE=Server`
 
 ## 2. Update SYSTEM PATH (Required for SCP and SFTP)
 Append the Win32-OpenSSH install directory to the system path, by running the following command:  
