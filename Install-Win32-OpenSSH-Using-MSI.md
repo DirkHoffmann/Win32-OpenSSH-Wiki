@@ -22,13 +22,10 @@ The commands to run, are as follows:
 `msiexec /i C:\users\public\downloads\openssh.msi REMOVE=Client`
 
 ## 2. Update SYSTEM PATH (Required for SCP and SFTP)
-Append the Win32-OpenSSH install directory to the system path, by running one of following commands.  
-If using the x86 installer on a 64-bit machine:  
-`setx /M PATH $($Env:PATH + ';' + ${Env:ProgramFiles(x86)} + '\OpenSSH')`
+Append the Win32-OpenSSH install directory to the system path, by running the following command:  
+`[Environment]::SetEnvironmentVariable("Path", $env:Path + ';' + ${Env:ProgramFiles} + '\OpenSSH', [System.EnvironmentVariableTarget]::Machine)`
 
-All other cases:  
-`setx /M PATH $($Env:PATH + ';' + ${Env:ProgramFiles} + '\OpenSSH')`
-
+To verify that the System Path variable was modified properly, the Environment Variables can be viewed in Control Panel, under the Advanced tab. 
 ## 3. Verify OpenSSH Install
 Check the status of the SSH Service.  
 In PowerShell, run:   
