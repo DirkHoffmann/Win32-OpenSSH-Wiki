@@ -1,3 +1,14 @@
+## Install using WinGet
+
+Starting with GitHub Release 8.9.1.0, OpenSSH Beta releases are available through [WinGet](https://learn.microsoft.com/en-us/windows/package-manager/winget/). 
+With WinGet installed on the machine, use the following commands:  
+* Search:  
+`winget search "openssh beta"`  
+* Install:  
+`winget install "openssh beta"`  
+* Uninstall:  
+`winget uninstall "openssh beta"`
+
 ## Install Win32 OpenSSH (test release)
 
 1. Win32-OpenSSH Github releases can be installed on Windows 7 and up.
