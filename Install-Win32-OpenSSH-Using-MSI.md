@@ -30,7 +30,7 @@ The commands to run, are as follows:
 `msiexec /i C:\users\public\downloads\openssh.msi REMOVE=Server`
 
 ## 2. Update SYSTEM PATH (Required for SCP and SFTP)
-Append the Win32-OpenSSH install directory to the system path, by running the following command:  
+Append the Win32-OpenSSH install directory to the system path, by running the following command in an elevated PowerShell session:  
 `[Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path",[System.EnvironmentVariableTarget]::Machine) + ';' + ${Env:ProgramFiles} + '\OpenSSH', [System.EnvironmentVariableTarget]::Machine)`
 
 To verify that the System Path variable was modified properly, the Environment Variables can be viewed in Control Panel, under the Advanced tab. 
