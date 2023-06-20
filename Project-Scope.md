@@ -10,6 +10,7 @@ Intent of this project is to get to a state that can converge to and integrate i
 - Compression
 - AuthorizedKeysCommand
 - AuthorizedPrincipalsCommand
+- Bind Interface, i.e. `ssh -B` (note: Bind Address, i.e. `ssh -b` _is_ supported)
 
 (Windows specific feature/work items)
 - MINGW build support
