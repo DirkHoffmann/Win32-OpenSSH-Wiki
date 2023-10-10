@@ -1,3 +1,7 @@
+**Deprecated as of August 2023 by https://github.com/PowerShell/openssh-portable/pull/677.** 
+
+**Please see https://github.com/PowerShell/Win32-OpenSSH/wiki/Building-OpenSSH-for-Windows-(using-LibreSSL-crypto) for up-to-date instructions.**
+
 #### Building using Visual Studio 2015
 
 Download and Install VS 2015 [Community Edition](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx)  
