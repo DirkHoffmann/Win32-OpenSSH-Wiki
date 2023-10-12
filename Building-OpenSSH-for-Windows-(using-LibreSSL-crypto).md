@@ -25,8 +25,10 @@
 - Open `contrib\win32\openssh\Win32-OpenSSH.sln` in Visual Studio, if prompted ensure platform toolset is set to "no upgrade" and Windows SDK is set to "10.0.22621.0" 
 - If necessary, change the configuration and architecture from the middle toolbar
 - Build the Win32-OpenSSH binaries
-     - Binaries will be in a `.\bin\{Architecture}\{Configuration}` folder, as shown in the image below for an x64, Debug build:
+- Note: after the first build of a configuration & architecture or if a new libcrypto version is being pulled in, the corresponding `libcrypto.dll` needs to be copied from `\contrib\win32\openssh\libressl\bin\desktop\{Architecture}\` to `.\bin\{Architecture}\{Configuration}`
+     - Binaries will be in a `\bin\{Architecture}\{Configuration}` folder, as shown in the image below for an x64, Debug build:
 ![OpenSSH Binaries Folder Location](https://user-images.githubusercontent.com/14894321/155556691-3573b5df-8295-4815-9543-a8e38e78b5fa.png)
+
 
 #### Building OpenSSH for Windows Using Build Script
 In Powershell:
