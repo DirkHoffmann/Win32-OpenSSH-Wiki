@@ -1,6 +1,6 @@
 ## Install using WinGet
 
-Starting with GitHub Release 8.9.1.0, OpenSSH Beta releases are available through [WinGet](https://learn.microsoft.com/en-us/windows/package-manager/winget/). 
+Starting with GitHub Release 8.9.1.0, OpenSSH Beta releases are available through [WinGet](https://learn.microsoft.com/en-us/windows/package-manager/winget/) (for Windows 10 and newer). 
 With WinGet installed on the machine, use the following commands:  
 * Search:  
 `winget search "openssh beta"`  
@@ -9,7 +9,11 @@ With WinGet installed on the machine, use the following commands:
 * Uninstall:  
 `winget uninstall "openssh beta"`
 
+Microsoft has published instructions to [Get started with OpenSSH for Windows](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui#install-openssh-for-windows) in 2024.
+
 ## Install Win32 OpenSSH (test release)
+
+The following lines describe manual installation, which works for all system, including older ones. Note that a semi-automatic [installation with MSI](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI) is available, which you are likely to prefer. Instructions below do _not_ apply to that installation.
 
 1. Win32-OpenSSH Github releases can be installed on Windows 7 and up.
 1. Note [these considerations](https://github.com/PowerShell/Win32-OpenSSH/wiki/Various-Considerations) and [project scope](https://github.com/PowerShell/Win32-OpenSSH/wiki/Project-Scope) first.
